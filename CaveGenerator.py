@@ -99,8 +99,10 @@ class CaveGenerator:
         return self.FLOOR
 
     def PrintMap(self):
-        for row in range(self.numRows):
-            for column in range(self.numColumns):   
+        
+        for column in range(self.numColumns):
+            for row in range(self.numRows):
+                #reflected
                 print(self.mapArray[row][column], end=" ")
             print()
         print()
